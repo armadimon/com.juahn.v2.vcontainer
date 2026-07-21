@@ -1,0 +1,11 @@
+{
+  "name": "com.juahn.v2.vcontainer",
+  "displayName": "VContainer Bridge",
+  "author": "armadimon",
+  "version": "0.1.0",
+  "unity": "6000.0",
+  "license": "MIT",
+  "type": "library",
+  "description": "Bridge/adapter between hadashiA's VContainer DI and JuahnFrameworkV2's IServiceLocator abstraction. Lets a project standardized on VContainer expose the framework's IServiceLocator (backed by a VContainer IObjectResolver) and register IServiceInstaller bindings into a LifetimeScope. VContainer must be installed by the consumer.",
+  "dependencies": {}
+}

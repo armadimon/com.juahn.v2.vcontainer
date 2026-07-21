@@ -1,0 +1,17 @@
+{
+    "name": "juahn.v2.VContainer",
+    "rootNamespace": "Juahn.V2.VContainer",
+    "references": [
+        "juahn.v2.DI",
+        "VContainer"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
