@@ -71,7 +71,7 @@ namespace Juahn.V2.VContainer
             // The locator needs the fully built IObjectResolver, which VContainer injects into the factory.
             builder.Register<IServiceLocator>(
                 resolver => new VContainerServiceLocator(resolver),
-                Lifetime.Singleton);
+                Lifetime.Scoped);
 
             return builder;
         }

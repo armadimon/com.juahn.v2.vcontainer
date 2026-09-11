@@ -124,3 +124,7 @@ choosing which bootstrapper/scope you place in the scene:
 ## License
 
 MIT. See `LICENSE.md`.
+
+## Scope and disposal contract (2026-09)
+
+`RegisterJuahnServiceLocator` registers a scoped locator: resolving in a child scope must see child-only services. `Bind`/`BindSelf` map to externally owned `RegisterInstance` values; the container does not dispose those instances. Type and factory registrations create container-owned services. Register per-run game/UI/physics services in a child scope and dispose it once when the run ends. The bridge does not drive game ticks. IdleMine pins VContainer 1.19.0 by Git commit and validates ownership and scope resolution in RuntimeCompositionTests.

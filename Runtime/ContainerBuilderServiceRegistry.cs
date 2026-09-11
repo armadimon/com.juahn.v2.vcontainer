@@ -22,8 +22,8 @@ namespace Juahn.V2.VContainer
     /// </para>
     /// <para>
     /// Because framework bindings are pre-created instances (installers pass concrete instances, not types),
-    /// every <c>Bind</c> maps to VContainer's <c>RegisterInstance</c>. VContainer manages the resulting
-    /// singleton for the lifetime of the scope.
+    /// every <c>Bind</c> maps to VContainer's <c>RegisterInstance</c>. These instances remain externally owned;
+    /// the container does not call Dispose on them. Use type/factory registration for owned services.
     /// </para>
     /// </remarks>
     public sealed class ContainerBuilderServiceRegistry : IServiceRegistry
