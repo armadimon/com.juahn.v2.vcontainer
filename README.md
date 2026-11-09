@@ -128,3 +128,7 @@ MIT. See `LICENSE.md`.
 ## Scope and disposal contract (2026-09)
 
 `RegisterJuahnServiceLocator` registers a scoped locator: resolving in a child scope must see child-only services. `Bind`/`BindSelf` map to externally owned `RegisterInstance` values; the container does not dispose those instances. Type and factory registrations create container-owned services. Register per-run game/UI/physics services in a child scope and dispose it once when the run ends. The bridge does not drive game ticks. IdleMine pins VContainer 1.19.0 by Git commit and validates ownership and scope resolution in RuntimeCompositionTests.
+
+## Package boundary validation
+
+Run `python3 Tools~/validate_package.py`. `package-policy.json` records allowed runtime assemblies, pure-core boundaries, declared dependencies and consumer-installed SDK dependencies. CI rejects unexpected references or missing Unity metadata. The existing runtime API is unchanged.

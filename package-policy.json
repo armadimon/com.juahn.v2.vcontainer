@@ -1,0 +1,19 @@
+{
+  "assemblies": {
+    "juahn.v2.VContainer": {
+      "references": [
+        "juahn.v2.DI",
+        "VContainer"
+      ],
+      "noEngineReferences": false
+    }
+  },
+  "assemblyOwners": {
+    "VContainer": "jp.hadashikick.vcontainer",
+    "juahn.v2.DI": "com.juahn.v2.di"
+  },
+  "consumerDependencies": [
+    "com.juahn.v2.di",
+    "jp.hadashikick.vcontainer"
+  ]
+}
